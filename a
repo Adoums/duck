@@ -1,0 +1,12 @@
+# script.ps1
+
+# Affiche un message de bienvenue
+Write-Host "Le script PowerShell a été téléchargé et exécuté avec succès!" -ForegroundColor Green
+
+# Effectuer une autre tâche simple, comme créer un fichier texte
+$path = "C:\Users\Public\example.txt"
+$content = "Ce fichier a été créé par le script PowerShell."
+Set-Content -Path $path -Value $content
+
+# Affiche un message de confirmation
+Write-Host "Un fichier texte a été créé à l'emplacement $path" -ForegroundColor Yellow
