@@ -1,5 +1,2 @@
-Write-Host "Le script PowerShell a été téléchargé et exécuté avec succès!" -ForegroundColor Green
-$path = "C:\Users\Public\example.txt"
-$content = "Ce fichier a été créé par le script PowerShell."
-Set-Content -Path $path -Value $content
-Write-Host "Un fichier texte a été créé à l'emplacement $path" -ForegroundColor Yellow
+Add-Type -AssemblyName PresentationFramework
+[System.Windows.MessageBox]::Show('Hello from PowerShell!', 'Message')
